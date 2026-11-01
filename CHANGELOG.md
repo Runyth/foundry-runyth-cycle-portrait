@@ -2,6 +2,14 @@
 
 ## 0.1.2 — 2026-11-01
 
+First publication as a Runyth module from the Runyth workspace (the id, title, npm package, and repository identity were already in place).
+
+### Publication
+
+- Joined the workspace publication standard: deterministic installable `-mod`, source `-src`, and documentation `-doc` archives with per-version SHA256 checksums, byte-identical rebuild verification, publication scanning, and the standard quality and release pipelines on Node 24.
+- Every program source carries the standard two-line AGPL source notice naming the holder; the manifest licence field points at the `LICENSE` file; the README carries the standard licence chapter and the release asset set; the interim packaging script moved into the standard toolchain.
+- The auxiliary notice file was removed; the manifest now carries the repository, manifest, download, readme, and changelog URL surfaces.
+
 ### Patch release
 
 - Fix a severe regression introduced in 0.1.1: the gallery and Help window overrode Foundry ApplicationV2's absolute window positioning with `position: relative`, causing an in-flow panel that displaced the right sidebar and prevented normal dragging.

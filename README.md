@@ -60,6 +60,23 @@ See `docs/USER_GUIDE.md` for detailed usage, `docs/API.md` for integrations, and
 
 Run `npm test` and `npm run check` from the source directory. These commands use Node.js built-in functionality and do not require installing dependencies. They do **not** replace testing in a real Foundry v13 environment; see `docs/VALIDATION.md` for manual acceptance checks.
 
+## Releases
+
+The GitHub repository is
+[`Runyth/foundry-runyth-cycle-portrait`](https://github.com/Runyth/foundry-runyth-cycle-portrait).
+Every release attaches:
+
+```text
+runyth-cycle-portrait-v<version>-mod.zip
+runyth-cycle-portrait-v<version>-src.zip
+runyth-cycle-portrait-v<version>-doc.zip
+module.json
+runyth-cycle-portrait-v<version>-SHA256SUMS.txt
+```
+
+The `module.json` manifest download URL points at the matching release's installable
+archive, and the marked Latest release is always the highest published version.
+
 ## Licence
 Copyright © 2026  [Daniel Braniewski](https://brani.dev/)
 
