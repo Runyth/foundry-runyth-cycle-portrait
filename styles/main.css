@@ -1,0 +1,243 @@
+/* Self-contained Foundry v13 gallery styles. No global button/theme overrides. */
+.runyth-cycle-portrait-app {
+  --rcp-thumb-width: 115px;
+  --rcp-thumb-height: 115px;
+  --rcp-opacity: 1;
+  --rcp-accent: var(--color-border-highlight, #ae8b60);
+  --rcp-border: var(--color-border-light, #817967);
+  color: var(--color-text-primary, #eee);
+  /*
+   * IMPORTANT: Never override the ApplicationV2 root's position property.
+   * Foundry positions floating .application windows outside document flow.
+   * `position: relative` here turns this entire window into an in-flow flex/grid
+   * item and can displace Foundry's sidebar, break dragging and trap the picker.
+   * The pseudo-element below is anchored by Foundry's own positioned root.
+   */
+  background: transparent !important;
+}
+/* Separate paint layer allows 0% window opacity without fading artwork. */
+.runyth-cycle-portrait-app::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  border-radius: inherit;
+  background: var(--background, var(--color-bg, #25211c));
+  opacity: var(--rcp-opacity);
+}
+.runyth-cycle-portrait-app > .window-header,
+.runyth-cycle-portrait-app > .window-content {
+  position: relative;
+  z-index: 1;
+  background: transparent !important;
+}
+.runyth-cycle-portrait-app.rcp-window-transparent {
+  box-shadow: none !important;
+  border-color: transparent !important;
+}
+.runyth-cycle-portrait-app.rcp-window-transparent > .window-header {
+  border-color: transparent !important;
+}
+.runyth-cycle-portrait-app .window-content {
+  display: flex;
+  overflow: hidden;
+  min-height: 0;
+  padding: 0;
+}
+.runyth-cycle-portrait-app .rcp-shell {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  min-height: 0;
+  min-width: 0;
+  padding: 12px;
+  gap: 8px;
+}
+.runyth-cycle-portrait-app .rcp-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 7px;
+  flex: 0 0 auto;
+}
+.runyth-cycle-portrait-app .rcp-search {
+  flex: 1 1 145px;
+  min-width: 90px;
+  height: 32px;
+}
+.runyth-cycle-portrait-app .rcp-action:not(.rcp-tile) {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  min-width: 32px;
+  min-height: 32px;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+.runyth-cycle-portrait-app .rcp-regex[aria-pressed='true'] {
+  background: #26598e !important;
+  border: 2px solid #c3e6ff !important;
+  color: #fff !important;
+  font-weight: 800;
+}
+.runyth-cycle-portrait-app .rcp-status {
+  flex: 0 0 auto;
+  min-height: 20px;
+  overflow-wrap: anywhere;
+  font-size: 0.9em;
+}
+.runyth-cycle-portrait-app .rcp-error {
+  color: #ff9a9a;
+  font-weight: 600;
+}
+.runyth-cycle-portrait-app .rcp-gallery {
+  display: grid;
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: auto;
+  grid-template-columns: repeat(auto-fill, minmax(calc(var(--rcp-thumb-width) + 12px), 1fr));
+  grid-auto-rows: max-content;
+  justify-content: space-around;
+  align-content: start;
+  gap: 12px;
+  padding: 6px;
+  overscroll-behavior: contain;
+}
+.runyth-cycle-portrait-app button.rcp-tile {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: content-box;
+  width: var(--rcp-thumb-width) !important;
+  min-width: var(--rcp-thumb-width) !important;
+  max-width: var(--rcp-thumb-width) !important;
+  height: auto !important;
+  min-height: var(--rcp-thumb-height) !important;
+  max-height: none !important;
+  padding: 4px !important;
+  border: 2px solid var(--rcp-border);
+  border-radius: 6px;
+  background: transparent !important;
+  color: white;
+  cursor: pointer;
+  overflow: visible;
+  line-height: normal;
+}
+.runyth-cycle-portrait-app .rcp-thumbnail {
+  display: block;
+  width: var(--rcp-thumb-width);
+  height: var(--rcp-thumb-height);
+  flex: 0 0 var(--rcp-thumb-height);
+  object-fit: contain;
+  background: transparent !important;
+  pointer-events: none;
+}
+.runyth-cycle-portrait-app .rcp-caption {
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+  overflow-wrap: anywhere;
+  text-align: center;
+  font-size: 11px;
+  line-height: 1.25;
+  pointer-events: none;
+}
+.runyth-cycle-portrait-app .rcp-tile:is(:hover, :focus-visible, .is-current) {
+  border-color: var(--rcp-accent);
+  box-shadow: inset 0 0 0 1px var(--rcp-accent), 0 0 8px #638dce;
+}
+
+.runyth-cycle-portrait-app .rcp-tile::before,
+.runyth-cycle-portrait-app .rcp-tile::after {
+  content: none !important;
+  display: none !important;
+}
+.runyth-cycle-portrait-app .rcp-tile.is-missing .rcp-thumbnail { opacity: 0.35; }
+.runyth-cycle-portrait-app .rcp-configuration {
+  flex: 0 0 auto;
+  max-height: 170px;
+  overflow: auto;
+}
+.runyth-cycle-portrait-app .rcp-pattern-row,
+.rcp-prototype-source .rcp-pattern-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  width: 100%;
+}
+.runyth-cycle-portrait-app .rcp-pattern-row input,
+.rcp-prototype-source .rcp-pattern-row input {
+  flex: 1 1 220px;
+  min-width: 0;
+}
+.runyth-cycle-portrait-app .rcp-pattern-description {
+  font-size: 0.85em;
+  line-height: 1.5;
+}
+.runyth-cycle-portrait-app.rcp-help-window .window-content { overflow: auto; }
+.runyth-cycle-portrait-app .rcp-help {
+  padding: 14px 18px;
+  max-width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-wrap: anywhere;
+  line-height: 1.5;
+}
+.runyth-cycle-portrait-app .rcp-help h3 { margin: 1em 0 0.3em; }
+.runyth-cycle-portrait-app .rcp-help p { margin: 0 0 0.6em; }
+#token-hud button.rcp-hud-button,
+.token-hud button.rcp-hud-button {
+  font-size: 20px;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+}
+@media (max-width: 560px) {
+  .runyth-cycle-portrait-app .rcp-shell { padding: 6px; }
+  .runyth-cycle-portrait-app .rcp-gallery { gap: 6px; justify-content: start; }
+  .runyth-cycle-portrait-app .rcp-pattern-row { flex-direction: column; }
+}
+
+#token-hud .rcp-hud-svg,
+.token-hud .rcp-hud-svg {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  vertical-align: middle;
+}
+#token-hud .rcp-hud-emoji,
+.token-hud .rcp-hud-emoji { line-height: 1; }
+
+/* Size configuration submenu: linked slider by default, independent axes on demand. */
+.runyth-cycle-portrait-thumbnail-settings .window-content { padding: 0; overflow: auto; }
+.runyth-cycle-portrait-thumbnail-settings .rcp-size-controls {
+  display: grid;
+  gap: .85rem;
+  padding: 1rem;
+  min-width: 0;
+  align-content: start;
+}
+.runyth-cycle-portrait-thumbnail-settings .rcp-size-controls p {
+  margin: 0;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+.runyth-cycle-portrait-thumbnail-settings .rcp-size-toggle {
+  display: flex;
+  gap: .6rem;
+  align-items: center;
+  cursor: pointer;
+}
+.runyth-cycle-portrait-thumbnail-settings .rcp-size-slider { display: grid; gap: .35rem; min-width: 0; }
+.runyth-cycle-portrait-thumbnail-settings .rcp-size-slider label {
+  display: flex;
+  justify-content: space-between;
+  gap: .5rem;
+  font-weight: 600;
+}
+.runyth-cycle-portrait-thumbnail-settings .rcp-size-slider input { width: 100%; min-width: 0; cursor: pointer; }
+.runyth-cycle-portrait-thumbnail-settings .rcp-size-controls [hidden] { display: none !important; }

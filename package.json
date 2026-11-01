@@ -1,0 +1,10 @@
+{
+  "name": "runyth-cycle-portrait",
+  "version": "0.1.2",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "check": "node --check scripts/main.mjs && node --check scripts/gallery.mjs && node --check scripts/files.mjs && node --check scripts/service.mjs && node --check scripts/settings.mjs && node --check scripts/hud.mjs && node --check scripts/hud-order.mjs && node --check scripts/hud-icons.mjs && node --check scripts/prototype.mjs && node --check scripts/help.mjs && node --check scripts/thumbnail-settings.mjs && node --check scripts/thumbnail-size.mjs"
+  }
+}

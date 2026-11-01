@@ -1,0 +1,15 @@
+{
+  "id": "runyth-cycle-portrait",
+  "title": "Runyth Cycle Portrait",
+  "description": "An independent portrait gallery for selecting Actor images, with configurable image patterns, accessible Token HUD controls, and per-user display preferences.",
+  "version": "0.1.2",
+  "authors": [{"name": "Runyth"}],
+  "compatibility": {"minimum": "13", "verified": "13"},
+  "esmodules": ["scripts/main.mjs"],
+  "styles": ["styles/main.css"],
+  "languages": [
+    {"lang": "en", "name": "English", "path": "lang/en.json"},
+    {"lang": "de", "name": "Deutsch", "path": "lang/de.json"}
+  ],
+  "license": "AGPL-3.0-or-later"
+}
