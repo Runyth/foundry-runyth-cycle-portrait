@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+// Copyright (C) 2026 Daniel Braniewski. See the LICENSE file for rights and obligations.
 /** A fixed, self-contained set of HUD symbols; setting values never become markup. */
 import { MODULE_ID } from './files.mjs';
 

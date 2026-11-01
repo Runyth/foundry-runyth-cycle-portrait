@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+// Copyright (C) 2026 Daniel Braniewski. See the LICENSE file for rights and obligations.
 /** Permission-checked Actor operations and actor-scoped write sequencing. */
 import { MODULE_ID, assertSafePath, fallbackPattern, isImagePath } from './files.mjs';
 const inFlight = new Map();

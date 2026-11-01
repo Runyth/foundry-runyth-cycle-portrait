@@ -60,9 +60,21 @@ See `docs/USER_GUIDE.md` for detailed usage, `docs/API.md` for integrations, and
 
 Run `npm test` and `npm run check` from the source directory. These commands use Node.js built-in functionality and do not require installing dependencies. They do **not** replace testing in a real Foundry v13 environment; see `docs/VALIDATION.md` for manual acceptance checks.
 
-## License
+## Licence
+Copyright © 2026  [Daniel Braniewski](https://brani.dev/)
 
-Copyright © 2026 Runyth. Licensed under **GNU AGPL v3 or later (AGPL-3.0-or-later)**; see `LICENSE` and `LICENSE-NOTICE`.
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 ## References
 

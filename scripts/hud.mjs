@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+// Copyright (C) 2026 Daniel Braniewski. See the LICENSE file for rights and obligations.
 /** Idempotent Foundry v13 Token HUD integration. */
 import { MODULE_ID } from './files.mjs';
 import { SETTING, pref, t } from './settings.mjs';

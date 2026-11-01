@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+// Copyright (C) 2026 Daniel Braniewski. See the LICENSE file for rights and obligations.
 /** An accessible ApplicationV2 gallery; all dynamic markup uses safe DOM APIs. */
 import { MODULE_ID, filename, regexFilter } from './files.mjs';
 import { SETTING, pref, t } from './settings.mjs';

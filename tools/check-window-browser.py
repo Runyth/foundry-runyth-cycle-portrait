@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# Copyright (C) 2026 Daniel Braniewski. See the LICENSE file for rights and obligations.
 """Regression: floating V13 windows cannot displace Foundry's right sidebar.
 
 This models Foundry's positioned .application roots in a flex UI shell. It

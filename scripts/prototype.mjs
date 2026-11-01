@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+// Copyright (C) 2026 Daniel Braniewski. See the LICENSE file for rights and obligations.
 /** Optional Actor portrait source control within the prototype appearance content. */
 import { MODULE_ID } from './files.mjs';
 import { SETTING, pref, t } from './settings.mjs';

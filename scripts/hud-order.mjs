@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+// Copyright (C) 2026 Daniel Braniewski. See the LICENSE file for rights and obligations.
 /** Maintain the Portrait button immediately visually beneath the Cycle Token button.
  *
  * This integration is optional. It observes only the current HUD and moves only

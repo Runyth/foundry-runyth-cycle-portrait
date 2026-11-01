@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# Copyright (C) 2026 Daniel Braniewski. See the LICENSE file for rights and obligations.
 """Exercise live browser DOM rules using Foundry-like fixtures (not a live world)."""
 from __future__ import annotations
 

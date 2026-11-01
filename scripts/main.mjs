@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+// Copyright (C) 2026 Daniel Braniewski. See the LICENSE file for rights and obligations.
 /** Runyth Cycle Portrait entrypoint: independent Foundry v13 integration. */
 import { MODULE_ID, makeFileRepository } from './files.mjs';
 import { createPortraitService } from './service.mjs';

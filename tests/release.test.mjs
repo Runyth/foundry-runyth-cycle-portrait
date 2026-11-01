@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+// Copyright (C) 2026 Daniel Braniewski. See the LICENSE file for rights and obligations.
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
@@ -11,9 +13,10 @@ test('release metadata and full AGPL v3-or-later license are consistent', () => 
   const pkg = JSON.parse(read('package.json'));
   assert.equal(module.version, '0.1.2');
   assert.equal(pkg.version, module.version);
-  assert.equal(module.license, 'AGPL-3.0-or-later');
+  assert.equal(module.license, 'LICENSE');
   assert.match(read('LICENSE'), /GNU AFFERO GENERAL PUBLIC LICENSE/);
-  assert.match(read('LICENSE-NOTICE'), /any later version/);
+  assert.ok(read('README.md').includes('## Licence'));
+  assert.ok(read('README.md').includes('This program is free software: you can redistribute it and/or modify'));
 });
 
 test('icon choices include frames, emoji, built-in icons and self-contained artwork', () => {
