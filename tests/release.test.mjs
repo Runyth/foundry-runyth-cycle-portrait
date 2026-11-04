@@ -11,7 +11,7 @@ const read = name => readFileSync(new URL(`../${name}`, import.meta.url), 'utf8'
 test('release metadata and full AGPL v3-or-later license are consistent', () => {
   const module = JSON.parse(read('module.json'));
   const pkg = JSON.parse(read('package.json'));
-  assert.equal(module.version, '0.1.2');
+  assert.equal(module.version, '0.1.3');
   assert.equal(pkg.version, module.version);
   assert.equal(module.license, 'LICENSE');
   assert.match(read('LICENSE'), /GNU AFFERO GENERAL PUBLIC LICENSE/);

@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.3 — 2026-11-04
+
+- The installable archive now ships every relative import the manifest entry needs, so the module's buttons and settings register on world load instead of silently failing.
+
 ## 0.1.2 — 2026-11-01
 
 - First publication as a Runyth module from the Runyth workspace (the id, title, npm package, and repository identity were already in place).
