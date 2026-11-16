@@ -252,7 +252,7 @@ export class PortraitGallery extends foundry.applications.api.ApplicationV2 {
         const name = filename(image);
         const tile = button('', 'select', pref(SETTING.tooltips) ? name.replace(/\.[^.]+$/, '') : t('choose'));
         tile.classList.add('rcp-tile');
-        
+
         tile.dataset.src = image;
         tile.setAttribute('aria-label', `${t('choose')}: ${name}`);
         if (!pref(SETTING.tooltips)) tile.removeAttribute('title');

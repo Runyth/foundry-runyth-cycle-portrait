@@ -1,117 +1,117 @@
 {
   "RCP": {
-    "title": "Runyth Cycle Portrait",
-    "open": "Choose character portrait",
-    "search": "Search image filenames",
-    "regex": "Toggle regular expression search",
-    "previous": "Previous portrait",
-    "next": "Next portrait",
-    "refresh": "Refresh images",
-    "helpButton": "Help",
-    "loading": "Loading portraits…",
-    "images": "available portraits",
-    "empty": "No image files were found. Set a portrait image pattern, or place multiple images beside the current Actor portrait.",
-    "noSearchResults": "No filenames match the search.",
-    "loadError": "Unable to list portraits",
-    "updateError": "Unable to update portrait",
-    "saving": "Saving portrait…",
-    "saved": "Saved successfully",
     "choose": "Choose portrait",
-    "sourceSettings": "Actor portrait source (advanced)",
-    "patternLabel": "Actor portrait image path or wildcard",
-    "defaultPattern": "Automatic: folder of current Actor portrait",
-    "patternHint": "Accepts one image path or a wildcard such as portraits/hero/Head_*.webp. Leave blank for automatic discovery. This does not change token art or enable token randomization.",
-    "save": "Save",
     "clear": "Clear",
-    "resetGeometry": "Reset saved picker window position and size",
-    "resetDone": "The picker will use its default dimensions the next time it opens.",
+    "defaultPattern": "Automatic: folder of current Actor portrait",
+    "empty": "No image files were found. Set a portrait image pattern, or place multiple images beside the current Actor portrait.",
     "help": {
-      "intro": {
-        "heading": "Overview",
-        "body": "Open the Token HUD and select the frame emoji to choose the source Actor's portrait. The Actor image changes only when you select a new thumbnail."
+      "defaults": {
+        "body": "Installation does not alter existing Actor images, token textures, prototype token configuration, or image-randomization settings. Changes are explicit and limited to the Actor portrait.",
+        "heading": "Safe defaults"
       },
-      "setup": {
-        "heading": "Image discovery",
-        "body": "With no custom pattern, portrait candidates are discovered beside the Actor's current image. For full control set a path or wildcard in Actor → Prototype Token → Appearance, or use the advanced gallery source panel."
+      "intro": {
+        "body": "Open the Token HUD and select the frame emoji to choose the source Actor's portrait. The Actor image changes only when you select a new thumbnail.",
+        "heading": "Overview"
       },
       "pattern": {
-        "heading": "Path patterns",
-        "body": "Examples: portraits/hero/Head_*.webp, portraits/hero/*.{png,webp}, portraits/hero/Head_1.jpg. One exact image path shows one candidate. File listing depends on your Foundry file-storage permissions."
-      },
-      "defaults": {
-        "heading": "Safe defaults",
-        "body": "Installation does not alter existing Actor images, token textures, prototype token configuration, or image-randomization settings. Changes are explicit and limited to the Actor portrait."
+        "body": "Examples: portraits/hero/Head_*.webp, portraits/hero/*.{png,webp}, portraits/hero/Head_1.jpg. One exact image path shows one candidate. File listing depends on your Foundry file-storage permissions.",
+        "heading": "Path patterns"
       },
       "permission": {
-        "heading": "Permissions",
-        "body": "A GM may modify any Actor. Other users need ownership of the Actor and the triggering token, and the world's player-permission setting must allow changes."
+        "body": "A GM may modify any Actor. Other users need ownership of the Actor and the triggering token, and the world's player-permission setting must allow changes.",
+        "heading": "Permissions"
+      },
+      "setup": {
+        "body": "With no custom pattern, portrait candidates are discovered beside the Actor's current image. For full control set a path or wildcard in Actor → Prototype Token → Appearance, or use the advanced gallery source panel.",
+        "heading": "Image discovery"
       },
       "shortcuts": {
-        "heading": "Gallery controls",
-        "body": "Filename search is available by default. Enable regex via the asterisk. The advanced view adds navigation, refresh, Help and an Actor-specific pattern editor. The gallery shows large, genuinely transparent image thumbnails. Filename captions are optional; selected images are indicated by a border only. When Cycle Token is active, the portrait control sits immediately below its button."
+        "body": "Filename search is available by default. Enable regex via the asterisk. The advanced view adds navigation, refresh, Help and an Actor-specific pattern editor. The gallery shows large, genuinely transparent image thumbnails. Filename captions are optional; selected images are indicated by a border only. When Cycle Token is active, the portrait control sits immediately below its button.",
+        "heading": "Gallery controls"
       }
     },
+    "helpButton": "Help",
+    "images": "available portraits",
+    "loadError": "Unable to list portraits",
+    "loading": "Loading portraits…",
+    "next": "Next portrait",
+    "noSearchResults": "No filenames match the search.",
+    "open": "Choose character portrait",
+    "patternHint": "Accepts one image path or a wildcard such as portraits/hero/Head_*.webp. Leave blank for automatic discovery. This does not change token art or enable token randomization.",
+    "patternLabel": "Actor portrait image path or wildcard",
+    "previous": "Previous portrait",
+    "refresh": "Refresh images",
+    "regex": "Toggle regular expression search",
+    "resetDone": "The picker will use its default dimensions the next time it opens.",
+    "resetGeometry": "Reset saved picker window position and size",
+    "save": "Save",
+    "saved": "Saved successfully",
+    "saving": "Saving portrait…",
+    "search": "Search image filenames",
     "settings": {
-      "hud": {
-        "name": "Show portrait button on Token HUD",
-        "hint": "Show the portrait selector on tokens whose Actors may be edited."
-      },
-      "owners": {
-        "name": "Allow owning players to edit portraits",
-        "hint": "When off, only GMs may change an Actor's portrait using this module."
-      },
-      "icon": {
-        "name": "Portrait HUD icon",
-        "hint": "Choose a HUD emoji, Font Awesome icon, or bundled original vector artwork."
-      },
-      "regex": {
-        "name": "Remembered regex mode",
-        "hint": "Private internal search preference."
-      },
       "advanced": {
-        "name": "Use advanced gallery",
-        "hint": "Expose previous/next, refresh, help, and Actor portrait pattern controls."
+        "hint": "Expose previous/next, refresh, help, and Actor portrait pattern controls.",
+        "name": "Use advanced gallery"
       },
       "captions": {
-        "name": "Show image filenames",
-        "hint": "Only when enabled, show one filename caption beneath each image; there are no other image footers."
-      },
-      "tooltips": {
-        "name": "Show thumbnail hover tooltips",
-        "hint": "Display image filenames without extensions in hover tooltips."
-      },
-      "linked": {
-        "name": "Link thumbnail width and height",
-        "hint": "Legacy preference, retained only for migration."
-      },
-      "width": {
-        "name": "Thumbnail width",
-        "hint": "Legacy width, retained only for migration."
+        "hint": "Only when enabled, show one filename caption beneath each image; there are no other image footers.",
+        "name": "Show image filenames"
       },
       "height": {
-        "name": "Thumbnail height",
-        "hint": "Legacy height, retained only for migration."
-      },
-      "opacity": {
-        "name": "Picker window background opacity",
-        "hint": "0 makes the window backdrop fully transparent while controls, captions, and images stay opaque."
+        "hint": "Legacy height, retained only for migration.",
+        "name": "Thumbnail height"
       },
       "help": {
-        "name": "Portrait gallery Help",
+        "hint": "Open an accessible guide to portrait selection and wildcard patterns.",
         "label": "Open Help",
-        "hint": "Open an accessible guide to portrait selection and wildcard patterns."
+        "name": "Portrait gallery Help"
+      },
+      "hud": {
+        "hint": "Show the portrait selector on tokens whose Actors may be edited.",
+        "name": "Show portrait button on Token HUD"
+      },
+      "icon": {
+        "hint": "Choose a HUD emoji, Font Awesome icon, or bundled original vector artwork.",
+        "name": "Portrait HUD icon"
+      },
+      "linked": {
+        "hint": "Legacy preference, retained only for migration.",
+        "name": "Link thumbnail width and height"
+      },
+      "opacity": {
+        "hint": "0 makes the window backdrop fully transparent while controls, captions, and images stay opaque.",
+        "name": "Picker window background opacity"
+      },
+      "owners": {
+        "hint": "When off, only GMs may change an Actor's portrait using this module.",
+        "name": "Allow owning players to edit portraits"
+      },
+      "regex": {
+        "hint": "Private internal search preference.",
+        "name": "Remembered regex mode"
+      },
+      "tooltips": {
+        "hint": "Display image filenames without extensions in hover tooltips.",
+        "name": "Show thumbnail hover tooltips"
+      },
+      "width": {
+        "hint": "Legacy width, retained only for migration.",
+        "name": "Thumbnail width"
       }
     },
+    "sourceSettings": "Actor portrait source (advanced)",
     "thumbnail": {
-      "menuName": "Thumbnail dimensions",
-      "menuLabel": "Configure thumbnail sizes",
-      "menuHint": "Use one slider for width and height, or enable separate sliders. Saved independently for each world user.",
-      "description": "Resize the images in your portrait picker. Normally one slider controls both dimensions; enable separate sliders when needed. Portrait proportions are preserved.",
-      "separate": "Use separate width and height sliders",
       "both": "Width and height",
-      "width": "Width",
+      "description": "Resize the images in your portrait picker. Normally one slider controls both dimensions; enable separate sliders when needed. Portrait proportions are preserved.",
       "height": "Height",
-      "hint": "85–245 px. Changes immediately resize thumbnails and tiles in open portrait galleries; the actual Actor portraits are unaffected."
-    }
+      "hint": "85–245 px. Changes immediately resize thumbnails and tiles in open portrait galleries; the actual Actor portraits are unaffected.",
+      "menuHint": "Use one slider for width and height, or enable separate sliders. Saved independently for each world user.",
+      "menuLabel": "Configure thumbnail sizes",
+      "menuName": "Thumbnail dimensions",
+      "separate": "Use separate width and height sliders",
+      "width": "Width"
+    },
+    "title": "Runyth Cycle Portrait",
+    "updateError": "Unable to update portrait"
   }
 }

@@ -1,117 +1,117 @@
 {
   "RCP": {
-    "title": "Runyth Cycle Portrait",
-    "open": "Charakterporträt auswählen",
-    "search": "Dateinamen durchsuchen",
-    "regex": "Suche mit regulären Ausdrücken umschalten",
-    "previous": "Vorheriges Porträt",
-    "next": "Nächstes Porträt",
-    "refresh": "Bilder aktualisieren",
-    "helpButton": "Hilfe",
-    "loading": "Porträts werden geladen…",
-    "images": "verfügbare Porträts",
-    "empty": "Keine Bilder gefunden. Ein Suchmuster festlegen oder weitere Bilder im Ordner des aktuellen Charakterporträts ablegen.",
-    "noSearchResults": "Keine passenden Dateinamen gefunden.",
-    "loadError": "Porträts konnten nicht geladen werden",
-    "updateError": "Porträt konnte nicht geändert werden",
-    "saving": "Porträt wird gespeichert…",
-    "saved": "Erfolgreich gespeichert",
     "choose": "Porträt auswählen",
-    "sourceSettings": "Porträtquelle des Akteurs (Erweitert)",
-    "patternLabel": "Pfad oder Suchmuster für Akteursporträts",
-    "defaultPattern": "Automatisch: Ordner des aktuellen Porträts",
-    "patternHint": "Ein Einzelbild oder ein Muster wie portraits/held/Head_*.webp. Leer lassen für die automatische Suche. Tokenbilder und Zufallsauswahl bleiben unverändert.",
-    "save": "Speichern",
     "clear": "Leeren",
-    "resetGeometry": "Gespeicherte Position und Größe des Auswahlfensters zurücksetzen",
-    "resetDone": "Beim nächsten Öffnen wird das Auswahlfenster mit Standardgröße angezeigt.",
+    "defaultPattern": "Automatisch: Ordner des aktuellen Porträts",
+    "empty": "Keine Bilder gefunden. Ein Suchmuster festlegen oder weitere Bilder im Ordner des aktuellen Charakterporträts ablegen.",
     "help": {
-      "intro": {
-        "heading": "Überblick",
-        "body": "Öffne das Token-HUD und wähle das Rahmen-Emoji, um ein Akteursporträt auszuwählen. Das Bild wird erst durch die Auswahl einer Miniatur geändert."
+      "defaults": {
+        "body": "Bei Installation werden weder Akteursbilder noch Tokenbilder, Prototyp-Token oder Einstellungen für Zufallsbilder verändert. Nur eine explizite Auswahl aktualisiert ein Akteursporträt.",
+        "heading": "Sichere Voreinstellungen"
       },
-      "setup": {
-        "heading": "Bildersuche",
-        "body": "Ohne eigenes Muster werden Porträts im Ordner des aktuellen Akteursbildes gesucht. Eigene Pfade oder Muster unter Akteur → Prototyp-Token → Darstellung oder in der erweiterten Galerie eintragen."
+      "intro": {
+        "body": "Öffne das Token-HUD und wähle das Rahmen-Emoji, um ein Akteursporträt auszuwählen. Das Bild wird erst durch die Auswahl einer Miniatur geändert.",
+        "heading": "Überblick"
       },
       "pattern": {
-        "heading": "Dateimuster",
-        "body": "Beispiele: portraits/held/Head_*.webp, portraits/held/*.{png,webp}, portraits/held/Head_1.jpg. Ein vollständiger Dateipfad zeigt genau eine Option. Die Datei-Zugriffsrechte von Foundry gelten weiterhin."
-      },
-      "defaults": {
-        "heading": "Sichere Voreinstellungen",
-        "body": "Bei Installation werden weder Akteursbilder noch Tokenbilder, Prototyp-Token oder Einstellungen für Zufallsbilder verändert. Nur eine explizite Auswahl aktualisiert ein Akteursporträt."
+        "body": "Beispiele: portraits/held/Head_*.webp, portraits/held/*.{png,webp}, portraits/held/Head_1.jpg. Ein vollständiger Dateipfad zeigt genau eine Option. Die Datei-Zugriffsrechte von Foundry gelten weiterhin.",
+        "heading": "Dateimuster"
       },
       "permission": {
-        "heading": "Berechtigungen",
-        "body": "SL dürfen jeden Akteur ändern. Andere benötigen Besitzrechte sowohl am Akteur als auch am gewählten Token, und die Welteinstellung muss Änderungen erlauben."
+        "body": "SL dürfen jeden Akteur ändern. Andere benötigen Besitzrechte sowohl am Akteur als auch am gewählten Token, und die Welteinstellung muss Änderungen erlauben.",
+        "heading": "Berechtigungen"
+      },
+      "setup": {
+        "body": "Ohne eigenes Muster werden Porträts im Ordner des aktuellen Akteursbildes gesucht. Eigene Pfade oder Muster unter Akteur → Prototyp-Token → Darstellung oder in der erweiterten Galerie eintragen.",
+        "heading": "Bildersuche"
       },
       "shortcuts": {
-        "heading": "Galerie",
-        "body": "Die Dateinamensuche ist immer verfügbar. Der Stern schaltet reguläre Ausdrücke um. Die erweiterte Ansicht ergänzt Navigation, Aktualisierung, Hilfe und einen Mustereditor. Große Bilder behalten echte Transparenz. Dateinamen werden nur auf Wunsch unter den Bildern angezeigt; ausgewählte Bilder sind nur durch den Rahmen markiert. Mit Cycle Token erscheint die Porträt-Schaltfläche direkt unter dessen Schaltfläche."
+        "body": "Die Dateinamensuche ist immer verfügbar. Der Stern schaltet reguläre Ausdrücke um. Die erweiterte Ansicht ergänzt Navigation, Aktualisierung, Hilfe und einen Mustereditor. Große Bilder behalten echte Transparenz. Dateinamen werden nur auf Wunsch unter den Bildern angezeigt; ausgewählte Bilder sind nur durch den Rahmen markiert. Mit Cycle Token erscheint die Porträt-Schaltfläche direkt unter dessen Schaltfläche.",
+        "heading": "Galerie"
       }
     },
+    "helpButton": "Hilfe",
+    "images": "verfügbare Porträts",
+    "loadError": "Porträts konnten nicht geladen werden",
+    "loading": "Porträts werden geladen…",
+    "next": "Nächstes Porträt",
+    "noSearchResults": "Keine passenden Dateinamen gefunden.",
+    "open": "Charakterporträt auswählen",
+    "patternHint": "Ein Einzelbild oder ein Muster wie portraits/held/Head_*.webp. Leer lassen für die automatische Suche. Tokenbilder und Zufallsauswahl bleiben unverändert.",
+    "patternLabel": "Pfad oder Suchmuster für Akteursporträts",
+    "previous": "Vorheriges Porträt",
+    "refresh": "Bilder aktualisieren",
+    "regex": "Suche mit regulären Ausdrücken umschalten",
+    "resetDone": "Beim nächsten Öffnen wird das Auswahlfenster mit Standardgröße angezeigt.",
+    "resetGeometry": "Gespeicherte Position und Größe des Auswahlfensters zurücksetzen",
+    "save": "Speichern",
+    "saved": "Erfolgreich gespeichert",
+    "saving": "Porträt wird gespeichert…",
+    "search": "Dateinamen durchsuchen",
     "settings": {
-      "hud": {
-        "name": "Porträt-Schaltfläche im Token-HUD anzeigen",
-        "hint": "Auswahl für Token mit bearbeitbaren Akteuren anbieten."
-      },
-      "owners": {
-        "name": "Spielern mit Besitzrechten Änderungen erlauben",
-        "hint": "Wenn aus, können ausschließlich Spielleiter Akteursporträts ändern."
-      },
-      "icon": {
-        "name": "Porträt-Symbol im HUD",
-        "hint": "Emoji, Font-Awesome-Symbol oder mitgelieferte eigene Vektorgrafik für das HUD auswählen."
-      },
-      "regex": {
-        "name": "Gespeicherter Regex-Modus",
-        "hint": "Private Einstellung der Suche."
-      },
       "advanced": {
-        "name": "Erweiterte Galerie verwenden",
-        "hint": "Zurück/Weiter, Aktualisieren, Hilfe und Mustereditor anzeigen."
+        "hint": "Zurück/Weiter, Aktualisieren, Hilfe und Mustereditor anzeigen.",
+        "name": "Erweiterte Galerie verwenden"
       },
       "captions": {
-        "name": "Bilddateinamen anzeigen",
-        "hint": "Nur wenn aktiviert, wird ein Dateiname unter jedem Bild angezeigt; andere Bild-Fußzeilen gibt es nicht."
-      },
-      "tooltips": {
-        "name": "Bild-Tooltips anzeigen",
-        "hint": "Beim Darüberfahren Dateinamen ohne Erweiterung anzeigen."
-      },
-      "linked": {
-        "name": "Miniaturbreite und -höhe koppeln",
-        "hint": "Alte Einstellung, nur für die Übernahme vorhanden."
-      },
-      "width": {
-        "name": "Miniaturbreite",
-        "hint": "Alte Breite, nur für die Übernahme vorhanden."
+        "hint": "Nur wenn aktiviert, wird ein Dateiname unter jedem Bild angezeigt; andere Bild-Fußzeilen gibt es nicht.",
+        "name": "Bilddateinamen anzeigen"
       },
       "height": {
-        "name": "Miniaturhöhe",
-        "hint": "Alte Höhe, nur für die Übernahme vorhanden."
-      },
-      "opacity": {
-        "name": "Deckkraft des Fensterhintergrunds",
-        "hint": "Bei 0 ist der Hintergrund transparent, während Bilder und Bedienelemente sichtbar bleiben."
+        "hint": "Alte Höhe, nur für die Übernahme vorhanden.",
+        "name": "Miniaturhöhe"
       },
       "help": {
-        "name": "Hilfe zur Porträtgalerie",
+        "hint": "Anleitung für die Porträtauswahl und Dateimuster öffnen.",
         "label": "Hilfe öffnen",
-        "hint": "Anleitung für die Porträtauswahl und Dateimuster öffnen."
+        "name": "Hilfe zur Porträtgalerie"
+      },
+      "hud": {
+        "hint": "Auswahl für Token mit bearbeitbaren Akteuren anbieten.",
+        "name": "Porträt-Schaltfläche im Token-HUD anzeigen"
+      },
+      "icon": {
+        "hint": "Emoji, Font-Awesome-Symbol oder mitgelieferte eigene Vektorgrafik für das HUD auswählen.",
+        "name": "Porträt-Symbol im HUD"
+      },
+      "linked": {
+        "hint": "Alte Einstellung, nur für die Übernahme vorhanden.",
+        "name": "Miniaturbreite und -höhe koppeln"
+      },
+      "opacity": {
+        "hint": "Bei 0 ist der Hintergrund transparent, während Bilder und Bedienelemente sichtbar bleiben.",
+        "name": "Deckkraft des Fensterhintergrunds"
+      },
+      "owners": {
+        "hint": "Wenn aus, können ausschließlich Spielleiter Akteursporträts ändern.",
+        "name": "Spielern mit Besitzrechten Änderungen erlauben"
+      },
+      "regex": {
+        "hint": "Private Einstellung der Suche.",
+        "name": "Gespeicherter Regex-Modus"
+      },
+      "tooltips": {
+        "hint": "Beim Darüberfahren Dateinamen ohne Erweiterung anzeigen.",
+        "name": "Bild-Tooltips anzeigen"
+      },
+      "width": {
+        "hint": "Alte Breite, nur für die Übernahme vorhanden.",
+        "name": "Miniaturbreite"
       }
     },
+    "sourceSettings": "Porträtquelle des Akteurs (Erweitert)",
     "thumbnail": {
-      "menuName": "Abmessungen der Miniaturen",
-      "menuLabel": "Miniaturgrößen einstellen",
-      "menuHint": "Breite und Höhe mit einem Regler ändern oder getrennte Regler aktivieren. Individuell für jeden Benutzer dieser Welt.",
-      "description": "Die Größe der Porträtminiaturen einstellen. Normalerweise ändert ein Regler beide Abmessungen; bei Bedarf zwei separate Regler aktivieren. Das Seitenverhältnis bleibt erhalten.",
-      "separate": "Getrennte Regler für Breite und Höhe verwenden",
       "both": "Breite und Höhe",
-      "width": "Breite",
+      "description": "Die Größe der Porträtminiaturen einstellen. Normalerweise ändert ein Regler beide Abmessungen; bei Bedarf zwei separate Regler aktivieren. Das Seitenverhältnis bleibt erhalten.",
       "height": "Höhe",
-      "hint": "85–245 Pixel. Offene Galerien und Bildflächen werden sofort angepasst; die eigentlichen Akteursporträts bleiben unverändert."
-    }
+      "hint": "85–245 Pixel. Offene Galerien und Bildflächen werden sofort angepasst; die eigentlichen Akteursporträts bleiben unverändert.",
+      "menuHint": "Breite und Höhe mit einem Regler ändern oder getrennte Regler aktivieren. Individuell für jeden Benutzer dieser Welt.",
+      "menuLabel": "Miniaturgrößen einstellen",
+      "menuName": "Abmessungen der Miniaturen",
+      "separate": "Getrennte Regler für Breite und Höhe verwenden",
+      "width": "Breite"
+    },
+    "title": "Runyth Cycle Portrait",
+    "updateError": "Porträt konnte nicht geändert werden"
   }
 }
